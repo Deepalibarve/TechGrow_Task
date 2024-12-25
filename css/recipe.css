@@ -1,0 +1,303 @@
+        .navbar-nav a {
+            
+            font-weight: bolder;
+            color: purple;
+            font-size: 30px;
+            margin-right: 50px;
+            font-size: ;
+        }
+        .carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.footer a{
+    color: purple;
+    font-size: 20px;
+}
+.footer{
+     background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    box-shadow: 
+        inset 0 4px 8px rgba(0, 0, 0, 0.2), /* Main inner shadow */
+        inset 0 0 15px rgba(0, 0, 0, 0.1), /* Softer glow effect */
+        inset 0 -4px 6px rgba(255, 255, 255, 0.3); /* Light top highlight */
+    border-radius: 10px; /* Smooth edges */
+    border: 1px solid #ddd; /* Optional border for added definition */
+}
+.social-icons {
+    display: flex;
+    gap: 30px; /* Add spacing between icons */
+    justify-content: left; /* Center align the icons */
+    align-items: left; /* Align icons vertically */
+    padding-top: 20px;
+}
+.quick-link :hover{
+    color:  #616c59;
+}
+
+
+.social-icons .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+h3{
+    color: purple;
+}
+.fot{
+    text-align: center;
+}
+.container-about{
+    margin-top: 100px;
+   padding-left: 100px;
+   
+}
+.container-shop{
+    display: flex;
+}
+
+/*------shop container-----*/
+h2 {
+      color:  #616c59;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-top: 100px;
+    }
+    .container-shop{
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+           
+            margin-top: 150px;
+        }
+
+       
+        .shop {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .shop-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .shop-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .shop-item:hover img {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        
+        .shop-item:hover  {
+            opacity: 1;
+        }
+/*----recipe----*/
+        h1{
+            text-align: center;
+            padding-top: 30px;
+            margin-bottom: 50px;
+            color: #616c59;
+        }
+    .container-recipe {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 150px;
+        }
+
+       
+        .recipe {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .recipe-card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .recipe-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-card h3 {
+            margin: 0.5rem 0;
+            color: #D39D55;
+        }
+
+        .recipe-card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+
+        /*----- ADD Animation to header footer----*/
+       @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+       .shop-item, .recipe-card, .container-about img, .para,h1,h2 {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .shop-item ,.recipe-card{
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .shop-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer img {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Add smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
+        hr{
+             height: 2px;
+      width: 50%;
+      background-color:#616c59;
+      margin: 20px auto;
+        
+        }
+/*----Feedback---*/
+.container{
+   position: center;
+}
+    .main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feedback-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-form textarea {
+    resize: none;
+}
+
+.feedback-form button {
+    background-color: purple;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: lightgrey;
+}
+
+/* Rating Section */
+.rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.rating i {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating i:hover,
+.rating i.active {
+    color: #ff6f61;
+}
